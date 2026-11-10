@@ -5,7 +5,8 @@ Mi sitio de servicios: **[marianovatri.com.ar](https://www.marianovatri.com.ar)*
 ## Qué tiene
 
 - Escena 3D con partículas (Three.js) que pasa "del caos al orden" mientras scrolleás.
-- Trabajos con comparador antes/después.
+- Trabajos como casos de estudio (desafío, qué hice y resultado), más una lista compacta con el resto.
+- Banda clara de testimonios con una cinta de clientes que corre.
 - Cotizador en tres pasos que arma el mensaje y lo abre en WhatsApp.
 - Modo presentación para proyector: recorre las secciones sola, sin mouse. Se activa con la tecla `P` o abriendo el link con `?presentar`.
 - Funciona sin internet una vez visitado (service worker en `sw.js`).

@@ -3,7 +3,7 @@
 # build solo copia los archivos ahí.
 [build]
   publish = "dist"
-  command = "rm -rf dist && mkdir dist && cp -r index.html sw.js img vendor dist/"
+  command = "rm -rf dist && mkdir dist && cp -r index.html sw.js favicon.svg favicon.ico apple-touch-icon.png img vendor dist/"
 
 [[headers]]
   for = "/img/*"

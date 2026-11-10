@@ -1,12 +1,13 @@
 // Guarda la web, la librería 3D, las imágenes y las fuentes después de la primera visita,
 // para que el modo presentación funcione aunque falle el wifi del lugar.
 // Al cambiar imágenes o la librería, subir el número de CACHE.
-const CACHE = 'mv-v4';
+const CACHE = 'mv-v5';
 const CORE = [
   './', 'index.html', 'vendor/three.module.min.js', 'vendor/three.core.min.js',
   'img/fonevo.webp', 'img/gastro.webp', 'img/jardineria.webp', 'img/milo.webp',
   'img/pizza-antes.webp', 'img/pizza-despues.webp', 'img/marte.webp',
-  'img/mariano.webp', 'img/mariano-hola.webp', 'img/avatar.webp','img/avatar-chat.webp','img/qr-whatsapp.svg'
+  'img/mariano.webp', 'img/mariano-hola.webp', 'img/avatar.webp','img/avatar-chat.webp','img/qr-whatsapp.svg',
+  'favicon.svg', 'favicon.ico', 'apple-touch-icon.png'
 ];
 
 self.addEventListener('install', e => {

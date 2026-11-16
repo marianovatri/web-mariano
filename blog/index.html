@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog de Mariano Vatri: webs y sistemas para pymes</title>
+<meta name="description" content="Guías simples para pymes y consultoras: cuánto cuesta una web, cómo ordenar consultas de clientes y cuándo pasar de la planilla a un sistema.">
+<link rel="canonical" href="https://www.marianovatri.com.ar/blog/">
+<meta name="theme-color" content="#0A1517">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blog de Mariano Vatri" href="https://www.marianovatri.com.ar/blog/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Mariano Vatri">
+<meta property="og:url" content="https://www.marianovatri.com.ar/blog/">
+<meta property="og:title" content="Blog de Mariano Vatri: webs y sistemas para pymes">
+<meta property="og:description" content="Guías simples para pymes y consultoras: cuánto cuesta una web, cómo ordenar consultas de clientes y cuándo pasar de la planilla a un sistema.">
+<meta property="og:image" content="https://www.marianovatri.com.ar/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog de Mariano Vatri: webs y sistemas para pymes">
+<meta name="twitter:description" content="Guías simples para pymes y consultoras: cuánto cuesta una web, cómo ordenar consultas de clientes y cuándo pasar de la planilla a un sistema.">
+<meta name="twitter:image" content="https://www.marianovatri.com.ar/img/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{--ink:#0A1517;--ink-2:#112226;--bone:#ECE6DA;--fog:#8E9F9D;--glacier:#8FD1C4;--apricot:#F2A65A;--line:rgba(236,230,218,.14);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--bone);font:400 1.08rem/1.7 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--glacier);text-underline-offset:3px}a:hover{color:var(--bone)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--glacier);outline-offset:3px}
+.top{border-bottom:1px solid var(--line)}
+.bar{max-width:760px;margin:0 auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.mark{font:700 1.05rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--bone);text-decoration:none;display:flex;gap:10px;align-items:center}
+.mark i{width:10px;height:10px;border-radius:50%;background:var(--apricot);box-shadow:0 0 16px var(--apricot)}
+.bar nav{display:flex;gap:20px;font-size:.95rem}.bar nav a{color:var(--fog);text-decoration:none}.bar nav a:hover{color:var(--bone)}
+main{max-width:760px;margin:0 auto;padding:48px 20px 72px}
+.crumbs{font-size:.85rem;color:var(--fog);margin:0 0 18px}.crumbs a{color:var(--fog)}
+.eyebrow{font:500 .8rem "JetBrains Mono",ui-monospace,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--glacier);margin:0 0 14px}
+h1,h2{font-family:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;letter-spacing:-.025em;text-wrap:balance}
+h1{font-size:clamp(2rem,1.3rem + 3vw,3.2rem);line-height:1.05;font-weight:600;margin:0 0 18px}
+h2{font-size:clamp(1.4rem,1.1rem + 1.2vw,1.9rem);line-height:1.15;font-weight:600;margin:2.2em 0 .5em}
+.meta{color:var(--fog);font-size:.9rem;margin:0 0 32px}
+article p,article li{max-width:68ch}article li{margin-bottom:.45em}
+article strong{color:#fff;font-weight:600}
+.cta{margin:56px 0 0;padding:26px;border:1px solid var(--line);border-radius:18px;background:rgba(17,34,38,.6)}
+.cta b{display:block;font:600 1.3rem "Bricolage Grotesque",system-ui,sans-serif;margin-bottom:6px}
+.cta p{margin:0 0 18px;color:var(--fog)}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;background:var(--apricot);color:var(--ink);font-weight:600;text-decoration:none}
+.btn:hover{color:var(--ink);background:#f7b977}
+.list{list-style:none;padding:0;margin:36px 0 0;border-top:1px solid var(--line)}
+.list li{border-bottom:1px solid var(--line);padding:24px 0}
+.list a.t{font:600 1.35rem/1.2 "Bricolage Grotesque",system-ui,sans-serif;color:var(--bone);text-decoration:none;letter-spacing:-.02em}
+.list a.t:hover{color:var(--apricot)}
+.list p{margin:8px 0 0;color:var(--fog);font-size:1rem}
+.list small{font:500 .75rem "JetBrains Mono",ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--glacier)}
+.more{margin-top:48px;font-size:.95rem;color:var(--fog)}.more ul{padding-left:1.1em}
+footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;color:var(--fog);font-size:.9rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Blog", "name": "Blog de Mariano Vatri", "url": "https://www.marianovatri.com.ar/blog/", "inLanguage": "es-AR", "author": {"@type": "Person", "name": "Mariano Vatri"}, "blogPost": [{"@type": "BlogPosting", "headline": "Cuánto cuesta una página web para una pyme (y de qué depende)", "url": "https://www.marianovatri.com.ar/blog/cuanto-cuesta-una-pagina-web-para-una-pyme/", "datePublished": "2026-11-16"}, {"@type": "BlogPosting", "headline": "Landing page o sitio web: cuál necesita tu negocio", "url": "https://www.marianovatri.com.ar/blog/landing-page-o-sitio-web-que-necesita-tu-negocio/", "datePublished": "2026-11-16"}, {"@type": "BlogPosting", "headline": "Cómo ordenar las consultas de tus clientes: WhatsApp, formulario y planilla", "url": "https://www.marianovatri.com.ar/blog/como-ordenar-las-consultas-de-clientes-whatsapp-formulario-planilla/", "datePublished": "2026-11-16"}, {"@type": "BlogPosting", "headline": "Sistema a medida o planilla de Excel: cuándo dar el salto", "url": "https://www.marianovatri.com.ar/blog/sistema-a-medida-o-planilla-de-excel/", "datePublished": "2026-11-16"}]}</script>
+</head>
+<body>
+<div class="top"><div class="bar">
+<a class="mark" href="/"><i></i>Mariano Vatri</a>
+<nav aria-label="Principal"><a href="/#servicios">Servicios</a><a href="/#trabajos">Trabajos</a><a href="/blog/">Blog</a><a href="/#contacto">Contacto</a></nav>
+</div></div>
+<main>
+<p class="crumbs"><a href="/">Inicio</a> / Blog</p>
+<p class="eyebrow">Blog</p>
+<h1>Webs, sistemas y automatización, sin vueltas.</h1>
+<p class="meta">Guías cortas para dueños de pymes y consultoras de San Francisco, Córdoba y todo el país.</p>
+<ul class="list"><li><small>Precios</small><br><a class="t" href="/blog/cuanto-cuesta-una-pagina-web-para-una-pyme/">Cuánto cuesta una página web para una pyme (y de qué depende)</a><p>De qué depende el precio de una web o landing para una pyme: alcance, contenido, funciones y mantenimiento. Cómo pedir presupuestos comparables.</p></li><li><small>Webs</small><br><a class="t" href="/blog/landing-page-o-sitio-web-que-necesita-tu-negocio/">Landing page o sitio web: cuál necesita tu negocio</a><p>Diferencias entre una landing page y un sitio web completo, cuándo conviene cada uno y cómo decidir según tu objetivo y tu presupuesto.</p></li><li><small>Automatización</small><br><a class="t" href="/blog/como-ordenar-las-consultas-de-clientes-whatsapp-formulario-planilla/">Cómo ordenar las consultas de tus clientes: WhatsApp, formulario y planilla</a><p>Un método simple para que no se pierdan consultas: formulario en la web, aviso a WhatsApp y registro automático en una planilla.</p></li><li><small>Sistemas</small><br><a class="t" href="/blog/sistema-a-medida-o-planilla-de-excel/">Sistema a medida o planilla de Excel: cuándo dar el salto</a><p>Señales de que tu negocio superó las planillas: errores, duplicados, turnos que se pisan. Qué es un MVP y cómo empezar sin gastar de más.</p></li></ul>
+</main>
+<footer>© 2026 Mariano Vatri · Webs y sistemas a medida en San Francisco, Córdoba · <a href="/">Volver al inicio</a></footer>
+</body>
+</html>

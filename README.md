@@ -9,6 +9,8 @@ Mi sitio de servicios: **[marianovatri.com.ar](https://www.marianovatri.com.ar)*
 - Banda clara de testimonios con una cinta de clientes que corre.
 - Cotizador en tres pasos que arma el mensaje y lo abre en WhatsApp.
 - Modo presentación para proyector: recorre las secciones sola, sin mouse. Se activa con la tecla `P` o abriendo el link con `?presentar`.
+- Blog en `blog/` (un índice y artículos, cada uno en su carpeta con `index.html`), con feed RSS. Al sumar un artículo hay que agregarlo también a `sitemap.xml`.
+- SEO: `robots.txt`, `sitemap.xml`, datos estructurados (negocio, persona, FAQ, artículos) y etiquetas Open Graph y Twitter.
 - Funciona sin internet una vez visitado (service worker en `sw.js`).
 
 ## Cómo está hecho

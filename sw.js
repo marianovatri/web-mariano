@@ -1,7 +1,7 @@
 // Guarda la web, la librería 3D, las imágenes y las fuentes después de la primera visita,
 // para que el modo presentación funcione aunque falle el wifi del lugar.
 // Al cambiar imágenes o la librería, subir el número de CACHE.
-const CACHE = 'mv-v6';
+const CACHE = 'mv-v7';
 const CORE = [
   './', 'index.html', 'vendor/three.module.min.js', 'vendor/three.core.min.js',
   'img/fonevo.webp', 'img/gastro.webp', 'img/jardineria.webp', 'img/milo.webp',
@@ -25,13 +25,14 @@ self.addEventListener('fetch', e => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
 
-  // la página: primero la red (para ver siempre la última versión); sin conexión, la guardada
+  // la página: primero la red (para ver siempre la última versión); sin conexión, la guardada de esa misma página
   if (req.mode === 'navigate') {
     e.respondWith(fetch(req).then(res => {
       const copy = res.clone();
-      caches.open(CACHE).then(c => c.put('index.html', copy));
+      // cada página (inicio, blog) se guarda con su propia dirección
+      if (res.ok) caches.open(CACHE).then(c => c.put(req, copy));
       return res;
-    }).catch(() => caches.match('index.html')));
+    }).catch(() => caches.match(req).then(hit => hit || caches.match('index.html'))));
     return;
   }
 
